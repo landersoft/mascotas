@@ -4,7 +4,7 @@ from .models import Gato
 
 
 class AdminGato(admin.ModelAdmin):
-    list_display = ["nombre","raza","nacimiento","sexo"]
+    list_display = ["id","nombre","raza","nacimiento","sexo"]
     list_filter = ["raza"]
     search_fields = ["nombre", "sexo"]
 
